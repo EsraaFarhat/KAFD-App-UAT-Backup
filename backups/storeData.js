@@ -28,21 +28,21 @@ const {
 
 (async function getData() {
   const array = [
-//    LoggedInUser,
-//    OAuthUsers,
-//    OAuthClients,
-//    OAuthTokens,
-//    FaultReportingCategories,
-//    FaultReports,
-//    FaultReportsImages,
-//    Events,
-//    EventsImages,
-//    EventsPrices,
-//    Directories,
-//    DirectoriesImages,
+    LoggedInUser,
+    OAuthUsers,
+    OAuthClients,
+    OAuthTokens,
+    FaultReportingCategories,
+    FaultReports,
+    FaultReportsImages,
+    Events,
+    EventsImages,
+    EventsPrices,
+    Directories,
+    DirectoriesImages,
     Models,
     Locations,
-//    UsersModels,
+    UsersModels,
   ];
 
   for (const item of array) {
