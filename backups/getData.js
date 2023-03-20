@@ -51,8 +51,8 @@ const { UsersModels } = require("../models/UsersModels");
 
     let json = JSON.stringify(obj);
 	
-    fs.writeFileSync(`./backups/${item}.json`, json, "utf8");
-    console.log(`File ${item} has been saved!`);
+    fs.writeFileSync(`./backups/${item.tableName}.json`, json, "utf8");
+    console.log(`File ${item.tableName} has been saved!`);
 
   }
   process.exit();

@@ -23,7 +23,6 @@ const { Models } = require("../models/models");
 const { Locations } = require("../models/locations");
 const { UsersModels } = require("../models/UsersModels");
 
-// Get data from sequelize
 (async function getData() {
   const array = [
     LoggedInUser,
@@ -51,10 +50,10 @@ const { UsersModels } = require("../models/UsersModels");
     };
 
     let json = JSON.stringify(obj);
+	
+    fs.writeFileSync(`./backups/${item}.json`, json, "utf8");
+    console.log(`File ${item} has been saved!`);
 
-    fs.writeFileSync(`./backups/${item.tableName}.json`, json, "utf8");
-
-    console.log(`File ${item.tableName} has been saved!`);
   }
   process.exit();
 })();
